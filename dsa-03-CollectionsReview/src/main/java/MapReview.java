@@ -12,6 +12,7 @@ public class MapReview {
 
         System.out.println(findFirstNonRepeating(st));
     }
+
     public static Character findFirstNonRepeating(String str){
       // create a map : this will cost me space complexity O(n)
         Map<Character,Integer> map= new TreeMap<>();

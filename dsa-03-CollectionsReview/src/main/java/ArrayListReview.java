@@ -3,9 +3,9 @@ import java.util.*;
 public class ArrayListReview {
     public static void main(String[] args) {
         // Create ArrayList and a class
-   List<Student> students=new ArrayList<>();
+        List<Student> students=new ArrayList<>();
 
-// Add elements to ArrayList
+        // Add elements to ArrayList
         students.add(new Student(1,"Jack"));
         students.add(new Student(2,"Julia"));
         students.add(new Student(3,"Mike"));
