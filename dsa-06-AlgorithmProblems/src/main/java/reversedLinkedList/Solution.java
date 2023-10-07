@@ -11,7 +11,7 @@ public class Solution {
         list.printNodes();
     }
 
-    static void reverse(MySinglyLinkedList list) {
+    static void reverse(MySinglyLinkedList list) { // ((( .next != nextNode )))
 
         // Create two pointers
         Node prev = list.head;
@@ -34,4 +34,7 @@ public class Solution {
 /*
 Problem:
 Reverse the nodes of a singly linked list in one pass.
+
+Hint:
+We need a third variable to keep the track of third node.
  */
