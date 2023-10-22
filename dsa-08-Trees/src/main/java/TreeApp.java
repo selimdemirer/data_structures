@@ -24,6 +24,8 @@ public class TreeApp {
         tree.levelOrderTraversal();
         System.out.println();
         System.out.println("Tree contains 42: "+ tree.contains(42));
+        System.out.println("Node is a leaf node is : " + tree.isLeaf(tree.root.leftChild.rightChild.rightChild));
+        tree.printLeaves(tree.root);
 
 
 

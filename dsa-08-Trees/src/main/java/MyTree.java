@@ -94,7 +94,20 @@ public class MyTree {
         return false;
     }
 
+    // Task-2 Implement isLeaf(TNode node)
+    public boolean isLeaf(TNode node) {
+        // if left child and right child are null it is a leaf
+        return node.leftChild==null && node.rightChild==null;
+    }
 
+    // Task-3 Implement printLeaves(TNode node)
+    public void printLeaves(TNode root) {
+        // make a traversal, if current node is a leaf print it
+        if (root==null) return;
+        printLeaves(root.leftChild);  // Leftsubtree -> Rightsubtree-> root ==> post-order traversal
+        printLeaves(root.rightChild);
+        if (isLeaf(root)) System.out.print(root.value+ " =>");
+    }
 
 
 }
