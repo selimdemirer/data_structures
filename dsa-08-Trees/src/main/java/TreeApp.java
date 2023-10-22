@@ -22,6 +22,8 @@ public class TreeApp {
         System.out.println();
         System.out.println("Level Order Traversal of the Tree ");
         tree.levelOrderTraversal();
+        System.out.println();
+        System.out.println("Tree contains 42: "+ tree.contains(42));
 
 
 

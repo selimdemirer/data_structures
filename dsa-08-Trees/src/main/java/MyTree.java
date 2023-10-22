@@ -79,6 +79,20 @@ public class MyTree {
 
     }
 
+    // Task 1- Implement contains(int value)
+    public boolean contains(int value) {
+        if (root==null) return false;
+        // start from root with current
+        TNode current=root;
+        while (current!=null){
+            if (value<current.value){
+                current=current.leftChild; // branch left subtree
+            }else if (value>current.value){
+                current=current.rightChild;   // branch right subtree
+            }else return true;
+        }
+        return false;
+    }
 
 
 
