@@ -109,5 +109,18 @@ public class MyTree {
         if (isLeaf(root)) System.out.print(root.value+ " =>");
     }
 
+    // Task -4 Implement height(TNode root)
+    int height(TNode root) {
+        if (root==null) return -1;
+        if (isLeaf(root)) return 0;
+        return 1+ Math.max(height(root.leftChild), height(root.rightChild));
+    }
+
+    // Task - 5 Implement int countLeaves(Node root) # of leaves
+    int countLeaves(TNode root) {
+        if (root==null) return 0;
+        if (isLeaf(root)) return 1;
+        return countLeaves(root.leftChild) + countLeaves(root.rightChild);//number of leaves from left +right subtrees
+    }
 
 }

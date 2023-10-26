@@ -26,7 +26,9 @@ public class TreeApp {
         System.out.println("Tree contains 42: "+ tree.contains(42));
         System.out.println("Node is a leaf node is : " + tree.isLeaf(tree.root.leftChild.rightChild.rightChild));
         tree.printLeaves(tree.root);
-
+        tree.printLeaves(tree.root);
+        System.out.println("Height of the tree is: " + tree.height(tree.root));
+        System.out.println("Number of leaves:  " + tree.countLeaves(tree.root));
 
 
     }
