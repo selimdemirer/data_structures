@@ -104,7 +104,7 @@ public class MyTree {
     public void printLeaves(TNode root) {
         // make a traversal, if current node is a leaf print it
         if (root==null) return;
-        printLeaves(root.leftChild);  // Leftsubtree -> Rightsubtree-> root ==> post-order traversal
+        printLeaves(root.leftChild);  // Left subtree -> Right subtree-> root ==> post-order traversal
         printLeaves(root.rightChild);
         if (isLeaf(root)) System.out.print(root.value+ " =>");
     }
