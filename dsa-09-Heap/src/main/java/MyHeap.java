@@ -91,6 +91,10 @@ public class MyHeap {
         System.out.println();
     }
 
+    public int peek() {
+        if (size==0) throw new NoSuchElementException();
+        return items[0];
+    }
 
 }
 
