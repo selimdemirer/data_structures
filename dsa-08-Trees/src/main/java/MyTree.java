@@ -123,4 +123,11 @@ public class MyTree {
         return countLeaves(root.leftChild) + countLeaves(root.rightChild);//number of leaves from left +right subtrees
     }
 
+    // Task-  6  Implement int findSumOfLeaves(Node root) sum of values of leaves
+    int findSumOfLeaves(TNode root) {
+        if (root==null) return 0;
+        if (isLeaf(root)) return root.value;
+        return findSumOfLeaves(root.leftChild) + findSumOfLeaves(root.rightChild);
+    }
+
 }
