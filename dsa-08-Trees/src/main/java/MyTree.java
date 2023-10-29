@@ -130,4 +130,10 @@ public class MyTree {
         return findSumOfLeaves(root.leftChild) + findSumOfLeaves(root.rightChild);
     }
 
+    // Task -7 Calculate node sums
+    public int calculateNodeSums(TNode root) {
+        if (root==null) return 0;
+        return root.value+ calculateNodeSums(root.leftChild)+calculateNodeSums(root.rightChild);
+    }
+
 }
