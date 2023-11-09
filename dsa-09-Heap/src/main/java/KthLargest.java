@@ -34,4 +34,20 @@ Example 2:
 Constraints:
 • 1 <= k <= nums.length <= 104
 • -104 <= nums[i] <= 104
+
+Solution:
+
+Approach #1: done
+1. Put array into a heap/Priority Queue
+2. Remove operation k-1 times.
+3. Return root of the heap.
+
+Approach #2:
+1. Sort array descending
+2. Return (k-1) th element
+
+Approach #3:
+1. Quicksort
+2. Return when pivot is placed in (k-1)th position
+
  */
